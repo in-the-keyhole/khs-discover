@@ -1,6 +1,6 @@
 {
   "server" : {
     "name" : "ksh-discover",
-    "port" : 8761
+    "port" : 8762
   }
 }

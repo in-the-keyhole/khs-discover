@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" ng-app="khs-discover">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KHS-Discover</title>
+    <script src="lib/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="page-body">
+    <div ng-controller="MainController">
+        <label>{{apps.serviceName}}</label>
+        <div ng-repeat="app in apps.apps">
+            {{app}}
+        </div>
+
+        <div class="instanceInfo row">
+            <h3>Instance Info</h3>
+            <div class="col-sm-3">
+                <div class="row">
+                    <label>Info</label>
+                </div>
+                <div class="row">
+                    CPU Count:
+                </div>
+                <div class="row">
+                    HostName:
+                </div>
+                <div class="row">
+                    IpAddress:
+                </div>
+                <div class="row">
+                    Status:
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row">
+                    <label>Value</label>
+                </div>
+                <div class="row">
+                    {{info.cpuCount}}
+                </div>
+                <div class="row">
+                    {{info.hostName}}
+                </div>
+                <div class="row">
+                    {{info.ipaddress}}
+                </div>
+                <div class="row">
+                    {{info.status}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
