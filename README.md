@@ -1,5 +1,5 @@
-khs-discover
-=========
+# khs-discover
+
 
 A Light weight nodejs discovery service
 
