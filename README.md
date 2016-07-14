@@ -3,9 +3,9 @@
 
 A Light weight nodejs discovery service
 
-## Install
+## How to Install
 
-  npm install khs-discover --save
+    npm install khs-discover --save
 
 ## To add to a service Client
     var discoveryClient = require('khs-discover');
