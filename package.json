@@ -27,6 +27,7 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "guid": "0.0.12",
     "log4js": "^0.6.37",
     "request-promise": "^3.0.0"
   }
