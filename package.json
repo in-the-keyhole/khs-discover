@@ -1,16 +1,24 @@
 {
   "name": "khs-discover",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "README.md",
+    "index.js",
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/in-the-keyhole/khs-discover.git"
   },
-  "author": "",
+  "author": "Greg Yotz <gyotz@keyholesoftware.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/in-the-keyhole/khs-discover/issues"
