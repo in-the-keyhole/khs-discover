@@ -2,5 +2,10 @@
   "server" : {
     "name" : "ksh-discover",
     "port" : 8762
+  },
+  "client" : {
+    "host" : "localhost",
+    "port" : 8762
   }
+
 }
