@@ -33,5 +33,10 @@ A Light weight nodejs discovery service
     discovery.EnableDiscoveryServer();
   
 ## Release History
-* 1.0.7 Starting Point
+* 1.0.8 Starting Point
+    - added site
+    - added status feature
+    - added status walk
+    - added client - server commuication
+    - added uid to host
 * 1.0.0 Initial release
