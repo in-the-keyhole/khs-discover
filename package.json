@@ -1,7 +1,7 @@
 {
   "name": "khs-discover",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.5",
+  "description": "A Light weight nodejs discovery service",
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/in-the-keyhole/khs-discover#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "log4js": "^0.6.37"
+    "log4js": "^0.6.37",
+    "request-promise": "^3.0.0"
   }
 }

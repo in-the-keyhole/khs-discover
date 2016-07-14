@@ -4,6 +4,7 @@
     "port" : 8762
   },
   "client" : {
+    "name" : "client",
     "host" : "localhost",
     "port" : 8762
   }
