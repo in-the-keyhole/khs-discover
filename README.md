@@ -11,13 +11,12 @@ A Light weight nodejs discovery service
     var discoveryClient = require('khs-discover');
         discoveryClient.config({
             server: {
-                name: "ksh-discover",
                 port: 8762,
                 hostname: "localhost"
             },
             client: {
-                port: 3000 + i,
-                name: "test app " + i
+                port: 3000,
+                name: "Example App"
             }
         });
     discoveryClient.EnableDiscoveryClient();
