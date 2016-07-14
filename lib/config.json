@@ -3,7 +3,8 @@
     "name" : "ksh-discover",
     "port" : 8762,
     "hostname" : "localhost",
-    "refresh": 5000
+    "refresh": 5000,
+    "expireRate" : 30000
   },
   "client" : {
     "name" : "client",

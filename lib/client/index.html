@@ -39,19 +39,25 @@
                 <span class="col-lg-3">
                     <label>App Status</label>
                 </span>
-                <span>
+                <span class="col-lg-3">
                     <label>App HostName</label>
+                </span>
+                <span class="col-lg-3">
+                    <label>App UID</label>
                 </span>
             </div>
             <div class="row" ng-repeat="app in apps.apps">
                 <span class="col-lg-3">
-                    {{app.application.name}}
+                    {{app.name}}
                 </span>
                 <span class="col-lg-3">
-                    {{app.application.status}}
+                    {{app.status}}
                 </span>
                 <span class="col-lg-3">
-                    <a ng-href="{{app.application.hostname}}:{{app.application.port}}">{{app.application.hostname}}:{{app.application.port}}</a>
+                    <a ng-href="{{app.hostname}}:{{app.port}}">{{app.hostname}}:{{app.port}}</a>
+                </span>
+                <span class="col-lg-3">
+                    {{app.uid}}
                 </span>
             </div>
         </div>
