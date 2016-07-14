@@ -8,14 +8,19 @@ A Light weight nodejs discovery service
   npm install khs-discover --save
 
 ## To add to a service Client
-    var discovery = require('khs-discover');
-    discovery.config({
-          client: {
-              hostname: "localhost",
-              port: 8762
-          }
+    var discoveryClient = require('khs-discover');
+        discoveryClient.config({
+            server: {
+                name: "ksh-discover",
+                port: 8762,
+                hostname: "localhost"
+            },
+            client: {
+                port: 3000 + i,
+                name: "test app " + i
+            }
         });
-    discovery.EnableDiscoveryClient();
+    discoveryClient.EnableDiscoveryClient();
 
 ## To create a Discovery Server
     var discovery = require('khs-discover');
@@ -28,5 +33,5 @@ A Light weight nodejs discovery service
     discovery.EnableDiscoveryServer();
   
 ## Release History
-
+* 1.0.7 Starting Point
 * 1.0.0 Initial release
