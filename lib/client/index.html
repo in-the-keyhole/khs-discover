@@ -18,7 +18,8 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -37,27 +38,32 @@
                     <label>App Name</label>
                 </span>
                 <span class="col-lg-3">
-                    <label>App Status</label>
+                    <label>App ID</label>
                 </span>
                 <span class="col-lg-3">
-                    <label>App HostName</label>
+                    <label>Instance HostName</label>
                 </span>
                 <span class="col-lg-3">
-                    <label>App UID</label>
+                    <label>Instance UID</label>
                 </span>
+
             </div>
             <div class="row" ng-repeat="app in apps.apps">
                 <span class="col-lg-3">
                     {{app.name}}
                 </span>
                 <span class="col-lg-3">
-                    {{app.status}}
+                    {{app.appId}}
                 </span>
                 <span class="col-lg-3">
-                    <a ng-href="{{app.hostname}}:{{app.port}}">{{app.hostname}}:{{app.port}}</a>
+                    <div ng-repeat="instance in app.instances">
+                        <a ng-href="{{instance.hostname}}:{{instance.port}}">{{instance.hostname}}:{{instance.port}}</a> <span>({{instance.status}})</span>
+                    </div>
                 </span>
                 <span class="col-lg-3">
-                    {{app.uid}}
+                    <div ng-repeat="instance in app.instances">
+                        <span>{{instance.uid}}</span>
+                    </div>
                 </span>
             </div>
         </div>

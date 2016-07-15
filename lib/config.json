@@ -8,6 +8,7 @@
   },
   "client" : {
     "name" : "client",
-    "port" : 8762
+    "port" : 8762,
+    "refreshStatus": 5000
   }
 }
